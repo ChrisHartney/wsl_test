@@ -1,0 +1,63 @@
+Functionality
+  Recipes  
+    Ideas
+      - list when we had it 
+      - ranking system
+      - ability to generate ingridient list
+        - any chance of API integration?
+      - AI to suggest new recipes?
+      - suggestions based on style/meat?
+  restaurants
+    Ideas
+      when
+      ordered items
+      rating
+      places we want to try
+      some API to give us ideas? Yelp/Doordash/Google?
+  shows
+    Ideas
+      shows we watched, when, rating
+      what service was it on?
+      What do we want to watch
+      rating per chris vs katelin?
+      suggestion engine?
+  bank stuff
+    Ideas
+      Would rely on like.. API to financial integrations which seems hard
+  life events
+    Ideas
+      Reminders of upcoming, but mostly a catalog
+      Send emails
+      Read from calendar?
+  resume
+    just hosting it 
+Technical concepts
+  - authentication?
+  - React with hooks
+    - card system?
+    - rapid data entry
+  - Some sort of AI or ML?
+  - api work
+  - deply it via docker
+  - experiment with nosql probably mongo
+  - try to find spaces for microservices
+  - use go, probably for service?
+  - grid technology of some sort
+  - calendar tech
+
+Models
+  Recipe
+    source:string
+    name:string
+    description:text
+    picture:attachment
+    created_at:datetime
+    updated_at:datetime
+    rating:decimal
+
+  Ingredient
+    name:string
+    description:string
+    source:string
+    price:decimal
+  event
