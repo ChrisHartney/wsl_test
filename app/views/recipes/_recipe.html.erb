@@ -1,0 +1,36 @@
+<div id="<%= dom_id recipe %>">
+  <p>
+    <strong>Name:</strong>
+    <%= recipe.name %>
+  </p>
+
+  <p>
+    <strong>Source:</strong>
+    <%= recipe.source %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= recipe.description %>
+  </p>
+
+  <p>
+    <strong>Picture:</strong>
+    <%= link_to recipe.picture.filename, recipe.picture if recipe.picture.attached? %>
+  </p>
+
+  <p>
+    <strong>Rating:</strong>
+    <%= recipe.rating %>
+  </p>
+
+  <% if recipe.ingredients.length %>
+    <h2>Ingredients</h2>
+    <div style="margin-left: 25px;">
+      <%= render partial: 'ingredients/ingredient', collection: recipe.ingredients %>
+    </div>
+
+  <% end %>
+
+
+</div>
